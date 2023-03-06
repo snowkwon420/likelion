@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="Kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>박스 꾸미기</title>
+    <style>
+        body{
+            
+            gap: 10px;
+        }
+        div{
+            width: 180px;
+            height: 60px;
+            text-align: center;
+            line-height: 60px;
+            font-size: 2em;
+            font-weight: bold;
+            color: white;
+        }
+        div:nth-child(1){
+            background: #343f50;
+            /* 박스 안쪽으로 그림자 inset */
+            box-shadow: inset 5px 5px #4a5568;
+            border: 3px solid #000;
+        }
+
+        div:nth-child(2){
+            background: rgb(144,4,196);
+            background: linear-gradient(90deg, rgba(144,4,196,1) 22%, rgb(5, 53, 241) 100%);
+            border: 3px dashed rgba(144,4,196,1);
+            padding:3px;
+            /* border와 background 구분 /개별속성은 단축속성 이후에 적어주어야함 !/ */
+            background-clip: padding-box;
+        }
+
+        div:nth-child(3){
+            color: black;
+            border:2px solid rgb(186, 188, 191);
+            border-radius: 0 40px 40px 40px;
+            box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+        }
+        div:nth-child(4)::before{
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <div>Hello✋</div>
+    <div>Hello✋</div>
+    <div>Hello✋</div>
+    <div>Hello✋</div>
+</body>
+</html>
