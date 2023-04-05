@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="Kr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript</title>
+    <style></style>
+  </head>
+  <body>
+    <script>
+      //DOM
+      document.write("hello");
+
+      //BOM
+      window.alert("hello");
+      //브라우저에 메세지 다이얼로그를 띄웁니다.
+      window.prompt();
+      //브라우저에 사용자 데이터를 입력받을 수 있는 입력 창을 띄웁니다.
+      //숫자도 문자열로 받음
+      window.confirm();
+      //true 혹은 false 값을 반환하는 다이얼로그를 띄웁니다.
+
+      console.log();
+      //콘솔창에 로그메세지를 보여줍니다
+
+      console.log("%chello world", "color:red;font-size:32px");
+      console.log(
+        "%chello world%chello",
+        "color:red;font-size:32px",
+        "color:blue;font-size:16px"
+      );
+
+      console.error("snowkwon");
+      //콘솔창에 에러 메세지를 보여줍니다.
+
+      let data = {
+        a: 10,
+        b: 20,
+        c: 30,
+      };
+      let data2 = [10, 20, 30];
+      console.table(data);
+      //콘솔창에 데이터를 테이블 형태로 제공합니다.
+      console.table(data2);
+
+      console.dir(data);
+      console.dir(data2);
+
+      //자주사용 x
+      console.info("hello world");
+
+      //자주 사용은 안되지만 한번 사용할때 중요하게 사용되는 것
+      console.group("위니브");
+      console.group("경영지원");
+      console.log("대표/이호준");
+      console.group("비서팀");
+      console.groupEnd();
+      console.log("비서팀장 자비스");
+      console.log("COO/OOO");
+      console.log("CDO/OOO");
+      console.groupEnd();
+      console.group("개발");
+      console.log("개발리드/이OO");
+      console.log("FE/OOO");
+      console.log("FE/OOO");
+      console.log("BE/OOO");
+      console.log("BE/OOO");
+      console.log("Infra/OOO");
+      console.groupEnd();
+      console.group("디자인");
+      console.log("DE/OOO");
+      console.log("DE/OOO");
+      console.groupEnd();
+      console.groupEnd();
+    </script>
+  </body>
+</html>
