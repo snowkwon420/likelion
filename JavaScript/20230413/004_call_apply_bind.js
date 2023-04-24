@@ -88,5 +88,3 @@ var peter = {
 
 peter.sayName();
 bruce.sayName();
-
-/* peter.sayName() 과 bruce.sayName() 의 결과 값이 무엇이 될지 생각해봅시다. */

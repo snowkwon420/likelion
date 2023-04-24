@@ -16,6 +16,7 @@ function 제곱(x) {
 let 제곱2 = 제곱(2); // 2 제곱해주는 함수
 let 제곱3 = 제곱(3); // 3 제곱해주는 함수
 let 제곱4 = 제곱(4); // 4 제곱해주는 함수
+let 제곱5
 
 제곱2(2);
 제곱2(3);
@@ -41,6 +42,10 @@ function makeAdder(x) {
     y = 100;
     return x + y + z;
   };
+}
+
+function makeAdder2(x){
+  
 }
 
 var add5 = makeAdder(5);
