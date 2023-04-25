@@ -64,9 +64,6 @@ function showMemo() {
   const $memoLists = memolists.map(createMemoLi);
   console.log($memoLists);
 }
-function saveMemo(memo) {
-  memolists.push(memo);
-}
 
 function buttonOnclickHandler() {
   const memo = createMemo();
