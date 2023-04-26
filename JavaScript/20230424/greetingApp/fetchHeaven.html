@@ -40,6 +40,15 @@
         // 등록된 유저에 따른 인사말을 출력
         sayHi(user) {
           return new Promise((resolve, reject) => {
+            fetch('greeting.json')
+              .then((data)=>{
+                return data.json()
+              })
+              .then((response)=>{
+                
+              })
+            
+            
             const xhr = new XMLHttpRequest();
             xhr.open("GET", "greetings.json");
             xhr.onreadystatechange = () => {
