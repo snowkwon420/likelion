@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="Kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>document</title>
+    <script src="https://unpkg.com/react@18/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js" crossorigin></script>
+    <scrip src="https://unpkg.com/babel-standalone@6/babel.min.js%22%3"></script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="text/babel">
+      //js로 만들어보는 돔
+        function GreetingJs({name}) {
+          const h1 = document.createElement('h1');
+          h1.classList.add('greeting');
+          h1.appendChild(document.createTextNode('hello'));
+
+          const elI = document.createElement('i');
+          elI.appendChild(document.createTextNode(name));
+          h1.appendChild(elI);
+          h1.appendChild(document.createTextNode('. Welcome!'));
+
+          return h1;
+        }
+
+        function GreetingVdom({name}){
+          return React.createElement(
+            'h1',
+            {className: 'greeting'},
+            'Hello',
+            React.createElement(
+              'i',
+              null,
+              name
+            ),
+            '. Welcome!'
+          )
+        }
+
+        const root = document.getElementById('root');
+        root.appendChild(GreetingJs({ name: '재현' }));
+    </script>
+</body>
+</html>
