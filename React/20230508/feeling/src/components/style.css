@@ -1,0 +1,19 @@
+div {
+  margin: auto;
+}
+.select {
+  width: 200px;
+  height: 60px;
+  display: flex;
+  margin-bottom: 10px;
+  background-color: gray;
+  justify-content: center;
+  align-items: center;
+}
+
+.result {
+  width: 200px;
+  height: 300px;
+  border-radius: 10px;
+  border: 5px solid black;
+}
