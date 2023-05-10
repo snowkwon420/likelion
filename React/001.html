@@ -8,6 +8,36 @@
     <style></style>
   </head>
   <body>
-    <script href></script>
+    <div class="root"></div>
+    <script>
+      const root = document.querySelector(".root");
+      const container = document.createElement("div");
+      container.setAttribute("class", "container");
+      root.appendChild(container);
+
+      const ir = document.createElement("h1");
+      ir.setAttribute("class", "ir");
+      ir.innerText = "테스트 페이지";
+
+      const firstSection = document.createElement("section");
+      container.appendChild(ir);
+      container.appendChild(firstSection);
+
+      const title = document.createElement("h2");
+      const img = document.createElement("img");
+      const contents = document.createElement("p");
+
+      title.setAttribute("class", "section-title");
+      title.innerText = "섹션 제목";
+      img.setAttribute("class", "section-img");
+      img.setAttribute("scr", "img.jpg");
+      img.setAttribute("alt", "섹션이미지");
+      contents.setAttribute("class", "section-contents");
+      contents.innerText = "내용";
+
+      firstSection.appendChild(title);
+      firstSection.appendChild(img);
+      firstSection.appendChild(contents);
+    </script>
   </body>
 </html>
