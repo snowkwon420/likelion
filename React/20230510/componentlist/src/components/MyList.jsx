@@ -8,7 +8,7 @@ export default function MyList() {
   ];
 
   const itemList = [];
-
+  //forEach 문으로 만들기
   items.forEach((item) => {
     itemList.push(<li key={item.id}>{item.name}</li>);
   });
